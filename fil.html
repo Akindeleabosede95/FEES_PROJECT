@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>dropdown menu using select tab</title>
+</head>
+<script>
+function favTutorial() {
+var objectlist = document.getElementById("myList");
+console.log(objectlist);
+document.getElementById("favourite").value = objectlist.options[objectlist.selectedIndex].text;
+}
+</script>
+
+<body>
+<form>
+<b> Select you favourite country </b>
+<select id = "myList" onchange = "favTutorial()" >
+<option> ---Choose tutorial--- </option>
+<option  value="1"> Nigeria </option>
+<option> Gambia </option>
+<option> Sudan </option>
+<option> United state of America </option>
+</select>
+<p> Your selected tutorial site is: 
+<input type = "text" id = "favourite" size = "20"/> </p>
+</form>
+</body>
+</html>
+
+
