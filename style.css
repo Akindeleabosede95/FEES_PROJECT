@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+
 body{
- font-family: poppins;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 } 
 
-header{
+header.second-header{
+    background-size:cover;
+    height: 580px;
+    width: 1440px;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(22, 34, 74, 0) 0%, #16224A 140.62%), url(images/artsHeader-Image\ 1.png);
+}
 
+header.First-header{
+    background-size:cover;
+    height: 580px;
+    width: 1440px;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(22, 34, 74, 0) 0%, #16224A 140.62%), url(images/image\ 1\ \(1\).png);
+    /* transform: rotate(-180deg); */
+}
+
+header.FEES{
     background-size:cover;
     height:720px;
     Width: 1440px;
@@ -14,25 +32,28 @@ header{
 
 }
 
-.nav-item{
 
-}
+ .cast{
+    color: aliceblue;
+    text-decoration: none;
+ }
 
 .container h1{
     text-align: center;
     margin-top: 200px;
-    color: white; 
-    Font family: Poppins 
-    Font family: Poppins
-Font style: ExtraBold
-Font size: 64px
-Line height: 96px
-Line height: 100%
-Align: Center
-Vertical align: Top
-Fill Color Style: Shades/0
-Fill: Solid
-#FFFFFF
+    color: white;
+    font-weight: bolder; 
+    /* Font family: Poppins; 
+    Font family: Poppins;
+    Font style: ExtraBold; */
+    /* Font size: 64px; */
+/* Line height: 96px; */
+/* Line height: 100%; */
+/* Align: Center; */
+/* Vertical align: Top; */
+/* Fill Color Style: Shades/0; */
+
+
 }
 .h6 {
     color: white;
@@ -44,9 +65,6 @@ Fill: Solid
     text-align: center;
     width: 1104px;
     margin-bottom: 30px;
-
-
-
 }
 
 .form-control{
@@ -95,10 +113,10 @@ Fill: Solid
 
 }
 .navbar-light .navbar-nav .nav-link:hover{
-    color: red;
+    color: rgb(0, 26, 255);
     font-size: 15px;
     font-weight: 200;
-    background-color: blue;
+    background-color: rgb(38, 38, 54);
 }
 .container card-body card-text{
     color:black;
@@ -107,9 +125,16 @@ Fill: Solid
 
 .shop-item{
     margin: 30px;
+    flex: 1;
+    flex-wrap: wrap;
 }
 .shop-item-image{
-    height: 250px;
+    /* height: 250px; */
+    /* position: absolute; */
+    width: 572px;
+    height: 428px;
+    left: 0px;
+    top: 0px;
 }
 
 .shop-item-details{
@@ -122,9 +147,6 @@ font-weight: 400;
 line-height: 36px;
 letter-spacing: 0em;
 text-align: left;
-
-
-
  color: #6C6F77;
 }
 
@@ -133,6 +155,10 @@ text-align: left;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 
 }
 .shop-am{
@@ -150,11 +176,8 @@ text-align: left;
 
     
 }
-.shop-item-btn{
-    display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
+ .shop-item-btn{ 
+
 padding: 8px 192px;
 gap: 8px;
 color: aliceblue;
@@ -194,4 +217,116 @@ span{
     text-align: center
 
 }
-.shop-item-details
+.shop-ite-btn{
+    color: aliceblue;
+    height: 35px;
+    width: 350px; 
+    text-align: center;
+    background: #16224A;
+    border-radius: 4px;
+    font-weight: 600;
+    padding-top: 0.5em;
+
+    /* width: 384px; */
+    /* height: 52px; */
+}
+
+
+.shop-1{
+    padding-left: 3px;
+    padding-right: 5px;
+}
+.long input{
+    height: 56px;
+    width: 610px;
+    left: 0px;
+    top: 25px;
+    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+     
+}
+
+.shop-item-image{
+    width: 572px;
+    height: 428px;   
+}
+
+
+
+.country option{
+    padding-top: 5px;
+    height: 500px;
+    width: 50px;
+    background-color: red;
+    padding-bottom: 5px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+
+  button{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  
+/* .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .form-row .input-box {
+    width: calc(50% - 5px);
+  }
+  
+  .form-row .long-input-box {
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    .form-row {
+      flex-direction: column;
+    }
+    
+    .form-row .input-box,
+    .form-row .long-input-box {
+      width: 100%;
+    }
+} */
+
+.flex-between{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.first{
+    flex: 1;
+}
+
+.second {
+    flex:1;
+}
